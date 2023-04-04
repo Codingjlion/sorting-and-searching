@@ -4,10 +4,12 @@ function insertionSort(arr) {
       let j = i - 1;
       while (j >= 0 && arr[j] > key) {
         arr[j + 1] = arr[j];
+
         j = j - 1;
       }
       arr[j + 1] = key;
     }
     return arr;
   }
-  console.log(insertionSort(7,6,1))
+  let arr = [13,6,12,72,11];
+  console.log(insertionSort(arr))
